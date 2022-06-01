@@ -66,7 +66,7 @@ pipeline {
                 }
             }
         }
-        tage('Run Ansible') {
+        stage('Run Ansible') {
                steps {
                    script {
                         sh "ansible-galaxy install -r requirements.yml"
@@ -86,5 +86,5 @@ pipeline {
            cleanWs()
        }
    }
-   
+
 }
