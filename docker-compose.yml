@@ -14,3 +14,6 @@ services:
     container_name: backend
     ports:
       - 5001:5001
+roles: 
+  - name: geerlingguy.docker
+    version: 4.1.3
